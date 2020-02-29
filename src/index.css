@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+/* The "Click me" Button */
+.ref {
+	background: linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	border-radius: 6px;
+	border: 1px solid #84bbf3;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	cursor: pointer;
+	color: #ffffff;
+	padding: 6px 12px;
+}
+
+.ref:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+}
+
+.ref:focus {
+  outline: none;
+}
+
+/* The "New Feature" animation */
+.animation-container {
+  height: 54px;
+}
+
+.arrow {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.arrow::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid pink;
+  align-self: center;
+}
+
+.pop {
+  background-color: pink;
+  border-radius: 5px;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* to create the border effect */
+.arrow2 {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  left: -4px;
+  top: -52px;
+}
+
+.arrow2::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid silver;
+  align-self: center;
+}
+
+.pop2 {
+  background-color: silver;
+  width: 124px;
+  height: 54px;
+  border-radius: 6px;
+}
